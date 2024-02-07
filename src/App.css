@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 20px;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  background-color: #0b2434;
+  display: grid;
+  place-items: center;
+}
+main{
+  height: 400px;
+  max-width: 800px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.title{
+  font-size: 40px;
+  margin: 0;
+}
+.instructions{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+.dice-container{
+  display: grid;
+  grid-template: auto auto/repeat(5,1fr);
+  gap: 20px;
+}
+.die{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.die-num{
+  font-size: 2rem;
+}
+.roll-btn{
+  height: 50px;
+  width: 150px;
+  background-color: #5035ff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Karla', sans-serif;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.roll-btn:focus{
+  outline: none;
+}
+.roll-btn:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0,0,0,0.7);
+}
+.roll-count{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 5px 10px auto;
+}
+.about{
+  max-width: 800px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.about-title{
+  font-size: 35px;
+  color: #f5f5f5;
+}
+.about-para{
+  color: #f5f5f5;
+  font-size: 14px;
+  margin: 5px;
+}
+.dev{
+  color: #f5f5f5;
+  margin: 5px 0;
+}
+.dev-span{
+  color: #ffff57;
+}
+.github-code{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #ffff57;
+}
+.github-code img{
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+@media  (max-width: 400px) {
+  main{
+    height: 600px;
+  }
+  .dice-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .die{
+    margin: 5px 2px;
+  }
+
+}
